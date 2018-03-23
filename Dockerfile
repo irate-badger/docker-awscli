@@ -12,7 +12,7 @@ RUN apk update && apk add \
       python \
       py-pip \
       py2-pip && \
-      pip install --upgrade pip awscli=${AWSCLI_VERSION} s3cmd && \
+      pip install --upgrade pip awscli==${AWSCLI_VERSION} s3cmd && \
       mkdir /root/.aws
 
 COPY get-metadata /usr/local/bin/get-metadata
